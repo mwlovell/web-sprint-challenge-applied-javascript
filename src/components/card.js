@@ -1,3 +1,6 @@
+
+import axios from "axios";
+
 // TASK 5
   // ---------------------
   // Implement this function, which should return the markup you see below.
@@ -44,13 +47,31 @@ const Card = (article) => {
     cardAuthor.classList.add("author");
     imgContainer.classList.add("img-container");
     
-  return card
+    return Card
+  
 
 }
 
 
 
+
 const cardAppender = (selector) => {
+
+  axios.get('http://localhost:5000/api/articles')
+  .then(resp =>{
+    resp.data.articles.foreach(imgURL => {
+      const article = `${article}`;
+      const newCard = Card(article);
+      entryPoint.appendChild(newCard);
+    }
+
+    
+  
+  )
+  .catch(err=>{
+    console.log(err)
+  })
+  .finally(()=> console.log("DONE"))
   // TASK 6
   // ---------------------
   // Implement this function that takes a css selector as its only argument.
@@ -60,5 +81,6 @@ const cardAppender = (selector) => {
   // Append each card to the element in the DOM that matches the selector passed to the function.
   //
 }
+
 
 export { Card, cardAppender }
