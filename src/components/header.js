@@ -1,3 +1,7 @@
+
+const entryPoint = document.querySelector(".entry");
+
+
 const Header = (title, date, temp) => {
 
   // const dogCard = document.createElement("div"); // <div></div>
@@ -22,9 +26,12 @@ const Header = (title, date, temp) => {
     // dogCard.classList.add("dog-card");
     // image.classList.add("dog-image");
 
-    headDate.textContent = `${date}`;
-    headTemp.textContent = `${temp}`;
+    headDate.textContent = `date: ${date}`;
+    headTemp.textContent = `temp: ${temp}`;
     headTitle.textContent = `${title}`;
+    header.classList.add("header");
+    headDate.classList.add("date");
+    headTemp.classList.add("temp");
 
 
     return header
@@ -50,7 +57,13 @@ const Header = (title, date, temp) => {
 
 
 const headerAppender = (selector) => {
+
+   
   // TASK 2
+ 
+
+
+  
   // ---------------------
   // Implement this function taking a css selector as its only argument.
   // It should create a header using the Header component above, passing arguments of your choosing.
