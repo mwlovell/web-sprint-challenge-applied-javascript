@@ -1,4 +1,40 @@
 const Header = (title, date, temp) => {
+
+  // const dogCard = document.createElement("div"); // <div></div>
+  // const image = document.createElement("img"); // <img />
+  // const heading = document.createElement("h3");
+
+    const header = document.createElement('div');
+    const headDate = document.createElement('span');
+    const headTitle = document.createElement('h1');
+    const headTemp = document.createElement('span');
+
+    // dogCard.appendChild(image); // <div><img /></div>
+    // dogCard.appendChild(heading); // <div><img /><h3></h3></div>
+
+
+    header.appendChild(headDate);
+    header.appendChild(headTitle);
+    header.appendChild(headTemp);
+
+    // heading.textContent = `Breed: ${breed}`;
+    // image.src = imageURL;
+    // dogCard.classList.add("dog-card");
+    // image.classList.add("dog-image");
+
+    headDate.textContent = `${date}`;
+    headTemp.textContent = `${temp}`;
+    headTitle.textContent = `${title}`;
+
+
+    return header
+}
+
+
+
+
+
+
   // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
@@ -11,7 +47,7 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
-}
+
 
 const headerAppender = (selector) => {
   // TASK 2
@@ -23,3 +59,5 @@ const headerAppender = (selector) => {
 }
 
 export { Header, headerAppender }
+
+

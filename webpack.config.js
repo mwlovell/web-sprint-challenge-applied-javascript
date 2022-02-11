@@ -8,6 +8,7 @@ module.exports = {
     filename: 'index.js',
     publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
+    
   },
   devtool: 'source-map',
   plugins: [
@@ -16,9 +17,11 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 3000,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+      
+     
+    }
   },
   module: {
     rules: [
