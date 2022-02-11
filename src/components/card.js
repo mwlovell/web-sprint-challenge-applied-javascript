@@ -1,4 +1,30 @@
 const Card = (article) => {
+  const card = document.createElement('div');
+  const cardHeadline = document.createElement('div');
+  const cardAuthor = document.createElement('div');
+  const imgContainer = document.createElement('div');
+  const cardImg = document.createElement('img');
+  const cardName = document.createElement('span');
+
+  card.appendChild(cardHeadline);
+  card.appendChild(cardAuthor);
+  card.appendChild(cardImg);
+  card.appendChild(cardName);
+  card.appendChild(imgContainer);
+
+  
+
+    cardHeadline.textContent = `${headline}`;
+    cardAuthor.textContent = `${authorPhoto}`;
+    cardImg.src =imgURL;
+    cardName.textContent = `${authorName}`;
+    card.classList.add("card");
+    cardHeadline.classList.add("headline");
+    cardAuthor.classList.add("author");
+    imgContainer.classList.add("img-container");
+    
+  return card
+
   // TASK 5
   // ---------------------
   // Implement this function, which should return the markup you see below.
