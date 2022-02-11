@@ -60,7 +60,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Demonstrate your understanding of this week's concepts by answering the following questions:
 
 1. What is the DOM?
-the dom or document object model saves computing space by running code when needed and by allowing my code and computer scripts and insert things into my html using javascript
+the dom or document object model saves computing space by running code when needed and by allowing my code and computer scripts and insert things into my html using javascript. in other words my computer and a webpage load only the information i need saving load time and computing space
 
 2. What is an event?
 a piece of code or function that executes when our eventlistener happens. in other something that takes place in our code, like a menu drop down opening or an action or even something that happens when a mouse hovers or clicks
@@ -70,7 +70,7 @@ an event listener is an action that our code is waiting for before firing
 like in the example above the mouse hover would be the listener and whatever happened afterwords like text changing color or highlighting would be the event 
 
 4. Why would we convert a NodeList into an Array?
-to access the data more easily and maniulate it 
+to access the data more easily and manipulate it 
 
 5. What is a component?
 a reusable piece of code like a function. we used these in class to create card components that were reusable similar to the method used by craigslist or facebook 

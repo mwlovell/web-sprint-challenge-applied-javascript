@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const entryPoint = document.querySelector(".entry");
+
 
 
 const Header = (title, date, temp) => {

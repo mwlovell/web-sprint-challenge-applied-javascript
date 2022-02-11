@@ -11,9 +11,9 @@ const Tabs = (topics) => {
   tabContainer.appendChild(tabOne);
   tabContainer.appendChild(tabTwo);
   tabContainer.appendChild(tabThree);
-  tabOne.textContent = 'javascript';
-  tabTwo.textContent = 'bootstrap';
-  tabThree.textContent = 'technology';
+  tabOne.textContent = `${topics}`;
+  tabTwo.textContent = `${topics}`;
+  tabThree.textContent = `${topics}`;
   tabOne.classList.add("tab");
   tabTwo.classList.add("tab");
   tabThree.classList.add("tab");
@@ -35,6 +35,7 @@ const Tabs = (topics) => {
   // </div>
   //
   
+  return tabContainer
 }
 
 
@@ -52,12 +53,12 @@ const tabsAppender = (selector) => {
 // const entryPoint = document.querySelector(selector);
 
 
-// const getTabs = ("topics", Tabs) => {
+// const getTabs = ('topics', Tabs) => {
 //   axios.get(`http://localhost:5000/api/topics`)
 //     .then(resp => {
-//       resp.data.message.forEach(imageURL => {
-//         const Card = tabsAppender({ topics, Tabs });
-//         entryPoint.appendChild(Card);
+//       resp.data.topics.forEach(imageURL => {
+//         const newTab = tabsAppender({ topics, Tabs });
+//         entryPoint.appendChild(newTab);
 //       })
 //     })
 //     .catch(err => {
