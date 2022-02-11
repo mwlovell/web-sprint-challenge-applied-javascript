@@ -57,21 +57,25 @@ const Card = (article) => {
 
 const cardAppender = (selector) => {
 
-  axios.get('http://localhost:5000/api/articles')
-  .then(resp =>{
-    resp.data.articles.foreach(imgURL => {
-      const article = `${article}`;
-      const newCard = Card(article);
-      entryPoint.appendChild(newCard);
-    }
+  // const selector = ".entry";
+  // const entryPoint = document.querySelector(selector);
+
+
+  // axios.get('http://localhost:5000/api/articles')
+  // .then(resp =>{
+  //   resp.data.articles.foreach(article => {
+  //     const article = `${article}`;
+  //     const newCard = Card(article);
+  //     entryPoint.appendChild(newCard);
+  //   }
 
     
   
-  )
-  .catch(err=>{
-    console.log(err)
-  })
-  .finally(()=> console.log("DONE"))
+  // )
+  // .catch(err=>{
+  //   console.log(err)
+  // })
+  // .finally(()=> console.log("DONE"))
   // TASK 6
   // ---------------------
   // Implement this function that takes a css selector as its only argument.
