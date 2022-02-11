@@ -1,3 +1,24 @@
+// TASK 5
+  // ---------------------
+  // Implement this function, which should return the markup you see below.
+  // It takes as its only argument an "article" object with `headline`, `authorPhoto` and `authorName` properties.
+  // The tags used, the hierarchy of elements and their attributes must match the provided markup exactly!
+  // The text inside elements will be set using their `textContent` property (NOT `innerText`).
+  // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
+  //
+  // <div class="card">
+  //   <div class="headline">{ headline }</div>
+  //   <div class="author">
+  //     <div class="img-container">
+  //       <img src={ authorPhoto }>
+  //     </div>
+  //     <span>By { authorName }</span>
+  //   </div>
+  // </div>
+  //
+
+
+
 const Card = (article) => {
   const card = document.createElement('div');
   const cardHeadline = document.createElement('div');
@@ -25,25 +46,9 @@ const Card = (article) => {
     
   return card
 
-  // TASK 5
-  // ---------------------
-  // Implement this function, which should return the markup you see below.
-  // It takes as its only argument an "article" object with `headline`, `authorPhoto` and `authorName` properties.
-  // The tags used, the hierarchy of elements and their attributes must match the provided markup exactly!
-  // The text inside elements will be set using their `textContent` property (NOT `innerText`).
-  // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
-  //
-  // <div class="card">
-  //   <div class="headline">{ headline }</div>
-  //   <div class="author">
-  //     <div class="img-container">
-  //       <img src={ authorPhoto }>
-  //     </div>
-  //     <span>By { authorName }</span>
-  //   </div>
-  // </div>
-  //
 }
+
+
 
 const cardAppender = (selector) => {
   // TASK 6

@@ -1,3 +1,4 @@
+import axios from "axios";
 
 const entryPoint = document.querySelector(".entry");
 
