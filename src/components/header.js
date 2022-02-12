@@ -59,7 +59,7 @@ const Header = (title, date, temp) => {
 
 const headerAppender = (selector) => {
 
-   
+   const newHead = h
   // TASK 2
  
 

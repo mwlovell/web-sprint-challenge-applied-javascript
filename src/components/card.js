@@ -35,24 +35,28 @@ const Card = (article) => {
   card.appendChild(cardImg);
   card.appendChild(cardName);
   card.appendChild(imgContainer);
+  document.querySelector(".headline").addEventListener("on third click", () => {
+    console.log(`${headline}`)
+  })
+  
 
   
 
     cardHeadline.textContent = `${headline}`;
     cardAuthor.textContent = `${authorPhoto}`;
-    cardImg.src =imgURL;
+    cardImg.src = imgURL;
     cardName.textContent = `${authorName}`;
     card.classList.add("card");
     cardHeadline.classList.add("headline");
     cardAuthor.classList.add("author");
     imgContainer.classList.add("img-container");
     
-    return Card
+    return card
   
 
 }
 
-
+ 
 
 
 const cardAppender = (selector) => {
